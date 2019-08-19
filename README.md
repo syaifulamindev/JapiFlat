@@ -1,6 +1,13 @@
 # JapiFlat
 JapiFlat Converter from JSON-API to ordinary JSON.
 
+## How to install
+
+To integrate JapiFlat into your Xcode project using CocoaPods, specify it in your Podfile:
+```ruby
+pod 'Alamofire', '~> 5.0.0-beta.5'
+```
+
 ## Usage
 
 ```swift
