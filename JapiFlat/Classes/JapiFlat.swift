@@ -122,7 +122,7 @@ public class JapiFlat {
         for value in includedObject {
             var relationship = value
             guard let id = relationship[Keys.id.rawValue] as? String,
-                let type = relationship[Keys.type.rawValue] as? String else{ continue }
+                let type = relationship[Keys.type.rawValue] as? String else { continue }
             
             let key = TypeIdPair(id: id, type: type)
             includedResolved.updateValue(relationship, forKey: key)
