@@ -4,6 +4,8 @@ JapiFlat Converter from JSON-API to ordinary JSON.
 ## Usage
 
 ```swift
+import JapiFlat
+
 let dictionary: [String: Any] = sampleData
 let json = JapiFlat.flatJson(from: dictionary)
 
