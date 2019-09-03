@@ -20,24 +20,14 @@ print(pretyJson)
 - [x] single data decoding
 - [x] array data decoding
 - [x] included decoding
-- [ ] errors decoding
-- [ ] meta decoding
-- [ ] links decoding
+- [x] meta decoding
 
 ### Resource Object
 - [x] id decoding
 - [x] type decoding
 - [x] attributes decoding
 - [x] relationships decoding
-- [ ] links decoding
-- [ ] meta decoding
 
 ### Relationship Object
 - [x] single data decoding
 - [x] array data decoding
-- [ ] links decoding
-- [ ] meta decoding
-
-### Links Object
-- [ ] href decoding
-- [ ] meta decoding
