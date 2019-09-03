@@ -9,7 +9,7 @@
 import Foundation
 
 fileprivate enum Keys: String {
-    case data, included, id, type, attributes, relationships
+    case data, included, id, type, attributes, relationships, meta
 }
 
 fileprivate struct TypeIdPair {
@@ -35,6 +35,7 @@ public class JapiFlat {
         let resourceRaw = object[Keys.data.rawValue]
         
         result[Keys.data.rawValue] = japiFlat.resolveResource(raw: resourceRaw, included: included)
+        result[Keys.meta.rawValue] = object[Keys.meta.rawValue]
         return result
     }
     
