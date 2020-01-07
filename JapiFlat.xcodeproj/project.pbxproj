@@ -620,7 +620,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -632,13 +632,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
+        
 		6EA2A5E423C4729C008B7C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,7 +657,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.StyleTheoryTechnologies.JapiFlatMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StyleTheoryTechnologies.JapiFlat;
 				PRODUCT_NAME = JapiFlat;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -681,7 +682,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.StyleTheoryTechnologies.JapiFlatMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StyleTheoryTechnologies.JapiFlat;
 				PRODUCT_NAME = JapiFlat;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Style Theory Technologies. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for JapiFlat.
 FOUNDATION_EXPORT double JapiFlatVersionNumber;
