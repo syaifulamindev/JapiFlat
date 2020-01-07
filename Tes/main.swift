@@ -6,6 +6,7 @@
 //  Copyright © 2019 Style Theory Technologies. All rights reserved.
 //
 
+import JapiFlat
 import Foundation
 
 let dictionary: [String: Any] = sampleData

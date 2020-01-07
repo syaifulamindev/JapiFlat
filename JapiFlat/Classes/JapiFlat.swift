@@ -80,7 +80,7 @@ public class JapiFlat {
         return attributesObject
     }
     
-    private func resolveRelationship(resourceRaw: [String: Any]?, included: [TypeIdPair: [String: Any]]?, solving: inout Set<TypeIdPair> = []) -> [String: Any]? {
+    private func resolveRelationship(resourceRaw: [String: Any]?, included: [TypeIdPair: [String: Any]]?, solving: inout Set<TypeIdPair>) -> [String: Any]? {
         guard
             let id = resourceRaw?[Keys.id.rawValue] as? String,
             let type = resourceRaw?[Keys.type.rawValue] as? String else { return nil }
@@ -107,7 +107,7 @@ public class JapiFlat {
         return resolvedAllRelationship
     }
     
-    private func relationship(relationshipRaw: [String: Any]?, included: [TypeIdPair: [String: Any]]?, solving: inout Set<TypeIdPair> = []) -> [String: Any]? {
+    private func relationship(relationshipRaw: [String: Any]?, included: [TypeIdPair: [String: Any]]?, solving: inout Set<TypeIdPair>) -> [String: Any]? {
         guard
             let id = relationshipRaw?[Keys.id.rawValue] as? String,
             let type = relationshipRaw?[Keys.type.rawValue] as? String else { return nil }
@@ -121,7 +121,7 @@ public class JapiFlat {
         
         var includedResolved: [TypeIdPair: [String: Any]] = [:]
         for value in includedObject {
-            var relationship = value
+            let relationship = value
             guard let id = relationship[Keys.id.rawValue] as? String,
                 let type = relationship[Keys.type.rawValue] as? String else { continue }
             
