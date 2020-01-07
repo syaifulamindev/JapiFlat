@@ -10,10 +10,11 @@ spec.summary      = "JapiFlat Converter from JSON-API to ordinary JSON."
 
 spec.platform = :ios, "10.0"
 spec.ios.deployment_target = '10.0'
+spec.osx.deployment_target = '10.9'
 spec.homepage     = 'https://github.com/Alamofire/Alamofire'
 spec.license      = { :type => 'MIT', :text => 'LICENSE' }
 spec.author       = { "Saminos" => "syaifulamin@styletheory.co" }
-spec.source = { git: "file:///Users/saminos/LocalGit/JapiFlat.git", tag: "v#{spec.version}", submodules: true }
+spec.source = { git: "https://github.com/saminos/JapiFlat.git", tag: "#{spec.version}", submodules: true }
 spec.source_files  = "JapiFlat/**/*.{h,swift}"
 
 spec.swift_version = '5.0'
