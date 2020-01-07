@@ -5,7 +5,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "JapiFlat"
-spec.version      = "0.0.1"
+spec.version      = "0.0.3"
 spec.summary      = "JapiFlat Converter from JSON-API to ordinary JSON."
 
 spec.platform = :ios, "10.0"
